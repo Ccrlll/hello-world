@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --primary-color: #353535;
+    --secondary-color: #121212;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.form-container {
+    width: screen;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-container > p {
+    font-size: 48px;
+    color: var(--secondary-color);
+}
+
+.form-container > #trd-mrk {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: rgba(18, 18, 18, 0.5);
+}
+
+@media only screen and (max-width: 767px) {
+    .form-container > #trd-mrk {
+        font-size: 2px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .form-container > #trd-mrk {
+        font-size: 4px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .form-container > #trd-mrk {
+        font-size: 6px;
+    }
+}
+
+#myForm {
+    padding: 16px;
+}
+
+#myForm > input{
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    text-align: center;
+}
+
+#myForm > input:focus {
+    outline: none;
+}
+
+#myForm > Button {
+    border-radius: 5px;
+    color: #e0e5ec;
+    background-color: var(--primary-color);
+}
+
+#myForm > input, Button {
+    padding: 5px;
+}
+
